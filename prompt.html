@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal AI Mastery Prompt (Hinglish)</title>
+  <style>
+    body {
+      background: #020617;
+      color: #e5e7eb;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.7;
+    }
+    h1 {
+      color: #38bdf8;
+      text-align: center;
+    }
+    p {
+      max-width: 900px;
+      margin: auto;
+      color: #cbd5f5;
+    }
+    textarea {
+      width: 100%;
+      min-height: 420px;
+      background: #0f172a;
+      color: #e5e7eb;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      background: #22c55e;
+      color: #020617;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #16a34a;
+    }
+    .note {
+      text-align: center;
+      color: #a5f3fc;
+      margin-top: 10px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Universal AI Mastery Prompt (Hinglish)</h1>
+
+<textarea id="promptText">
+You are an expert mentor and industry professional.
+
+I am preparing for a real job role, not exams. Teach me in simple Hinglish (Hindi + English mix), beginner to intermediate level, with real-world clarity.
+
+CHAPTER NAME: {{WRITE CHAPTER NAME HERE}}
+TOPIC NAME: {{WRITE TOPIC NAME HERE}}
+
+INSTRUCTIONS (VERY IMPORTANT):
+
+1. Explain the topic in very simple Hinglish.
+   - Assume I am a beginner.
+   - Avoid heavy English.
+   - Use real-life and company-related examples.
+
+2. Structure the answer properly with headings:
+   - Topic Overview (3–4 lines)
+   - Why this topic is important in companies
+   - Core concepts explained step-by-step
+   - Common mistakes beginners make
+   - How companies actually use this concept
+
+3. Create detailed notes:
+   - Bullet points where possible
+   - Clear explanations, no shortcuts
+   - If any term is important, explain it like I am 12th pass
+
+4. Add a Question–Answer section:
+   - Minimum 10 questions
+   - From basic to interview-level
+   - Answer in Hinglish
+
+5. Add practical examples:
+   - Real company / startup use cases
+   - Daily work scenarios
+
+6. Add practice tasks:
+   - Small exercises I can do myself
+   - Thinking-based tasks (not coding-heavy)
+
+7. Add YouTube learning support:
+   - Suggest 3–5 YouTube videos or channels
+   - Mention what exactly to search on YouTube
+   - Example: “Search this exact line on YouTube: ____”
+
+8. Add mastery checklist:
+   - After learning this topic, I should be able to:
+     - Explain it in my own words
+     - Apply it in real work
+     - Answer interview questions
+
+9. End with a short summary:
+   - Key takeaways
+   - How this topic connects to real job roles
+
+IMPORTANT RULES:
+- Do NOT assume prior knowledge
+- Do NOT skip basics
+- Do NOT be generic
+- Teach like my career depends on it
+
+Your goal is to make me CONFIDENT and JOB-READY in this topic.
+</textarea>
+
+<button onclick="copyPrompt()">📋 Copy Universal Prompt</button>
+<p class="note">Copy this prompt → paste in any AI → just change Chapter & Topic → start mastering 🔥</p>
+
+<script>
+  function copyPrompt() {
+    const textArea = document.getElementById("promptText");
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Prompt copied successfully! Now paste it into AI.");
+  }
+</script>
+
+</body>
+</html>
